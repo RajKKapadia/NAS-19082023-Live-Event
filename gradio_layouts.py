@@ -1,7 +1,6 @@
-# Gradio Interface
 import gradio as gr
 
-
+# Gradio Interface
 def demo_func(file_path: str, text: str) -> str:
     print(text)
     print(file_path)
@@ -16,6 +15,3 @@ demo = gr.Interface(
         label='Output image', type='filepath')],
     allow_flagging='never'
 )
-
-if __name__ == '__main__':
-    demo.launch()
