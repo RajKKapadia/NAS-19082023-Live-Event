@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 import gradio as gr
 
-from gradio_layouts import demo
+# from gradio_layouts import demo
+from text_classification_ui import demo
 
 app = FastAPI()
 
